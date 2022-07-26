@@ -14,3 +14,4 @@
     服务端配置中心：microServiceCloud-config-3344
     客户端配置中心：microServiceCloud-config-client-3355
     使用配置中心的eureka模块1：microServiceCloud-config-eureka-client-7001
+    使用配置中心的部门微服务提供者模块1：microServiceCloud-config-dept-client-8001
