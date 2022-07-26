@@ -1,0 +1,10 @@
+# bootstrap.yml系统集配置文件,优先级最高
+# 如果bootstrap.yml和application.yml共存，则bootstrap.yml生效
+# bootstrap.yml主要负责从外部源加载配置信息
+spring:
+  cloud:
+    config:
+      name: microServiceCloud-config-client #需要与github上读取的资源文件同名，注意没有yml后缀名
+      profile: dev   #本次访问的配置项
+      label: master
+      uri: http://127.0.0.1:3344  #本微服务启动后先去找3344号服务，通过SpringCloudConfig获取GitHub的服务地址

@@ -1,0 +1,16 @@
+整体父工程：microServiceCloud
+    公共子模块：microServiceCloud-API
+    部门微服务提供者模块1：microServiceCloud-provider-dept-8001
+    部门微服务提供者模块2：microServiceCloud-provider-dept-8002
+    部门微服务提供者模块3：microServiceCloud-provider-dept-8003
+    部门微服务消费者模块：microServiceCloud-consumer-dept-80+Ribbon均衡负载
+    eureka模块1：microServiceCloud-eureka-7001
+    eureka模块2：microServiceCloud-eureka-7002
+    eureka模块3：microServiceCloud-eureka-7003
+    Feign均衡负载模块：microServiceCloud-consumer-dept-feign.Feign集成了Ribbon，只需定义服务绑定接口
+    部门微服务提供者模块1+hystrix服务熔断：microServiceCloud-provider-dept-hystrix-8001
+    微服务实时调用监控：microServiceCloud-consumer-hystrix-dashboard
+    zuul模块：microServiceCloud-zuul-gateway-9527：注册进eureka，获得eureka其他微服务，对客户端请求进行转发，起到路由、保护等作用
+    服务端配置中心：microServiceCloud-config-3344
+    客户端配置中心：microServiceCloud-config-client-3355
+    使用配置中心的eureka模块1：microServiceCloud-config-eureka-client-7001
